@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA Gestionare Înregistrări</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestionare Înregistrări</h1>
+  </header>
+  
+  <main>
+    <section id="form-section">
+      <h2>Adaugă Înregistrare</h2>
+      <form id="add-form">
+        <label for="camp1">Câmp 1 (obligatoriu):</label>
+        <input type="text" id="camp1" name="camp1" required>
+        
+        <label for="camp2">Câmp 2 (obligatoriu):</label>
+        <input type="text" id="camp2" name="camp2" required>
+        
+        <label for="camp3">Câmp 3 (opțional):</label>
+        <input type="text" id="camp3" name="camp3">
+        
+        <button type="submit">Salvează</button>
+        <p id="error-message"></p>
+      </form>
+    </section>
+    
+    <section id="list-section">
+      <h2>Lista Înregistrărilor</h2>
+      <ul id="record-list"></ul>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
